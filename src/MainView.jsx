@@ -4,7 +4,7 @@ import CardsView from "./components/CardsView";
 
 
 const MainView = () => {
-  const [tickers, setTickers] = React.useState([])// {ticker:'', price: 1}
+  const [tickers, setTickers] = React.useState([])
 
 
   const addCrypto = async (value) => {

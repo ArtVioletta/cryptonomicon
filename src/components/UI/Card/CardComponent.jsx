@@ -1,9 +1,9 @@
 import React from 'react';
 import {Button, Card, CardActions, CardContent, Typography} from "@mui/material";
 
-export const CardComponent = ({ticker,price, deleteTickers}) => {
+export const CardComponent = ({ticker, price}) => {
     return (
-        <Card key={ticker}  style={{width: '100%', margin: '10px', justifyContent: 'center'}}>
+        <Card key={ticker}  style={{width: '300px', margin: '10px', justifyContent: 'center'}}>
             <CardContent style={{width:'100%', display: 'flex', justifyContent: 'center', flexDirection:'column', alignItems: 'center'}}>
                 <Typography sx={{ fontSize: 14 }} color="text.secondary" >
                     {ticker} - USD

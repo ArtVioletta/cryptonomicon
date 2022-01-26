@@ -10,7 +10,6 @@ const CryptoForm = ({onClick}) => {
         value={ticker}
         onChange={(e) => setTicker(e.target.value)}
         label="Write name"
-        defaultValue="Write name"
         size="small"
       />
       <Button onClick={() => {
