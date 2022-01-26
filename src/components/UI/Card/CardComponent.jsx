@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button, Card, CardActions, CardContent, Typography} from "@mui/material";
 
-export const CardComponent = ({ticker, price}) => {
+export const CardComponent = ({ticker, price, deleteTickers}) => {
     return (
         <Card key={ticker}  style={{width: '300px', margin: '10px', justifyContent: 'center'}}>
             <CardContent style={{width:'100%', display: 'flex', justifyContent: 'center', flexDirection:'column', alignItems: 'center'}}>
@@ -14,7 +14,7 @@ export const CardComponent = ({ticker, price}) => {
 
             </CardContent>
             <CardActions style={{display:'flex',  justifyContent: 'center', flexDirection:'column', alignItems: 'center'}}>
-                <Button size="small" >Delete</Button>
+                <Button size="small" onClick={deleteTickers} >Delete</Button>
             </CardActions>
         </Card>
     );

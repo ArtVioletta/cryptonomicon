@@ -27,10 +27,12 @@ const MainView = () => {
 
   const deleteTickers = (value) => {
     const newTickers = tickers.find(item => item.ticker !== value)
-    setTickers(newTickers)
+    if(!newTickers) return setTickers([])
+    else {
+      setTickers(newTickers)
+    }
   }
 
-  console.log(tickers)
   return (
     <div style={{padding: 10}}>
       <CryptoForm onClick={addCrypto}/>

@@ -13,7 +13,7 @@ const CryptoForm = ({onClick}) => {
         size="small"
       />
       <Button onClick={() => {
-        onClick(ticker);
+        onClick(ticker.toUpperCase());
         setTicker('')
       }} variant="contained" style={{backgroundColor: 'green', display: "block", marginTop: 5}}>Добавить</Button>
     </div>
