@@ -34,6 +34,7 @@ export const CardComponent = ({
           justifyContent: "center",
           flexDirection: "column",
           alignItems: "center",
+          cursor:'pointer'
         }}
       >
         <Typography sx={{ fontSize: 14 }} color="text.secondary">
@@ -51,7 +52,9 @@ export const CardComponent = ({
           alignItems: "center",
         }}
       >
-        <Button size="small" onClick={() => deleteTickers()}>
+        <Button size="small" onClick={(e) => {
+          e.stopPropagation()
+          deleteTickers(ticker)}}>
           Delete
         </Button>
       </CardActions>

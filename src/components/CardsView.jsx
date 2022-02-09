@@ -24,7 +24,7 @@ const CardsView = ({
           ? tickers.map((item) => (
               <CardComponent
                 key={item.ticker}
-                deleteTickers={() => deleteTickers(item.ticker)}
+                deleteTickers={deleteTickers}
                 ticker={item.ticker}
                 price={item.price}
                 currentTickers={currentTickers}
