@@ -13,6 +13,8 @@ export const CardComponent = ({
   deleteTickers,
   setCurrentTickers,
   currentTickers,
+  setShowDiagram,
+  setGraph
 }) => {
   return (
     <Card
@@ -25,6 +27,8 @@ export const CardComponent = ({
       }}
       onClick={() => {
         setCurrentTickers(ticker);
+        setGraph([])
+        setShowDiagram(true)
       }}
     >
       <CardContent

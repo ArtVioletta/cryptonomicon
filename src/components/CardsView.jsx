@@ -7,6 +7,8 @@ const CardsView = ({
   deleteTickers,
   currentTickers,
   setCurrentTickers,
+  setShowDiagram,
+  setGraph
 }) => {
   return (
     <div
@@ -23,6 +25,8 @@ const CardsView = ({
         {tickers.length
           ? tickers.map((item) => (
               <CardComponent
+                setGraph={setGraph}
+                setShowDiagram={setShowDiagram}
                 key={item.ticker}
                 deleteTickers={deleteTickers}
                 ticker={item.ticker}
